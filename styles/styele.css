@@ -47,7 +47,7 @@
 }
 
 .text-primary{
-    color: #FF900E;
+    color:#FF900E ;
 }
 
 
@@ -128,7 +128,9 @@ font-size: 3rem;
 /* team and features releted style */
 
 .teams{
+      display: flex;
     align-items: center;
+    gap: 73px;
 
 }
 
@@ -141,7 +143,6 @@ font-size: 3rem;
 }
 
 .our-features{
-    margin-left: 130px;
     max-width: 530px;
 }
 
@@ -162,7 +163,26 @@ font-size: 3rem;
         flex-direction:column;
         
     }
-    
+    .image-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .our-features{
+        margin-left: 20px;
+    }
+}
+
+/* mediam device*/
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 50px auto;
+    }
+
+
 }
 
 
